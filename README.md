@@ -3,22 +3,10 @@ what is within the repository should be fully tested and reusable.  Please visit
 see what issues we are aware of and what features/enhancements we are working on.  Otherwise, feel free to review the
 [Release Notes][release-notes] to see what is new and improved.
 
-## Project Badges
-
-[![Join the chat at https://gitter.im/apigee-127/swagger-tools](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/apigee-127/swagger-tools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-* Build status: [![Build Status](https://travis-ci.org/apigee-127/swagger-tools.svg)](https://travis-ci.org/apigee-127/swagger-tools)
-* Dependencies: [![Dependencies](https://david-dm.org/apigee-127/swagger-tools.svg)](https://david-dm.org/apigee-127/swagger-tools)
-* Developer dependencies: [![Dev Dependencies](https://david-dm.org/apigee-127/swagger-tools/dev-status.svg)](https://david-dm.org/apigee-127/swagger-tools#info=devDependencies&view=table)
-* Downloads: [![NPM Downloads Per Month](http://img.shields.io/npm/dm/swagger-tools.svg?style=flat)](https://www.npmjs.org/package/swagger-tools)
-* License: [![License](http://img.shields.io/npm/l/swagger-tools.svg?style=flat)](https://github.com/apigee-127/swagger-tools/blob/master/LICENSE)
-* Bower Version [![NPM Version](https://img.shields.io/bower/v/swagger-tools.svg?style=flat)](http://bower.io/search/?q=swagger-tools)
-* NPM Version: [![NPM Version](http://img.shields.io/npm/v/swagger-tools.svg?style=flat)](https://www.npmjs.org/package/swagger-tools)
-
 ## Supported Swagger Versions
 
 * [1.2][swagger-docs-v1_2]
-* [2.0][swagger-docs-v2_0]
+* [2.0][swagger-docs-v2_0]  - with json anyOf and oneOff construct added to the schema.
 
 ## Features
 
@@ -46,33 +34,13 @@ Swagger Tools is available for both Node.js and the browser.  Installation instr
 
 Installation for browser applications can be done via [Bower][bower] or by downloading a standalone binary.
 
-#### Using Bower
-
-```
-bower install swagger-tools --save
-```
-
-#### Standalone Binaries
-
-The standalone binaries come in two flavors:
-
-* [swagger-tools-standalone.js](https://raw.github.com/apigee-127/swagger-tools/master/browser/swagger-tools-standalone.js): _2,280kb_, full source _(including all dependencies)_ and source maps
-* [swagger-tools-standalone-min.js](https://raw.github.com/apigee-127/swagger-tools/master/browser/swagger-tools-standalone-min.js): _316kb_, minified, compressed
-and no sourcemap
 
 ### Node.js
 
-Installation for Node.js applications can be done via [NPM][npm].
+Installation for Node.js applications 
 
 ```
-npm install swagger-tools --save
-```
-
-If you want to use the `swagger-tools` executable for validating Swagger documents, you can install swagger-tools
-globally using the following:
-
-```
-npm install -g swagger-tools
+npm i -g git+https://github.com/WAvdBeek/swagger-node.git
 ```
 
 ## Documentation
@@ -82,18 +50,3 @@ the [Quick Start][quick-start].
 
 ## Contributing
 
-This project uses [Gulp][gulp] for building so `npm install -g gulp` once you clone this project.  Running `gulp` in the
-project root will lint check the source code and run the unit tests.
-
-[bower]: http://bower.io/
-[documentation]: https://github.com/apigee-127/swagger-tools/blob/master/docs/README.md
-[gulp]: http://gulpjs.com/
-[json-schema]: http://json-schema.org/
-[npm]: https://www.npmjs.org/
-[project-issues]: https://github.com/apigee/swagger-tools/issues
-[quick-start]: https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md
-[release-notes]: https://github.com/apigee-127/swagger-tools/blob/master/RELEASE_NOTES.md
-[swagger]: http://swagger.io/
-[swagger-docs-v1_2]: https://github.com/swagger-api/swagger-spec/blob/master/versions/1.2.md
-[swagger-docs-v2_0]: https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md
-[swagger-ui]: https://github.com/swagger-api/swagger-ui

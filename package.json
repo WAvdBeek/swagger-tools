@@ -1,5 +1,5 @@
 {
-  "name": "ocf-swagger-tools",
+  "name": "wb-swagger-tools",
   "version": "0.10.1",
   "description": "Various tools for using and integrating with Swagger.",
   "main": "index.js",
@@ -27,7 +27,7 @@
     "swagger"
   ],
   "bin": {
-    "swagger-tools": "./bin/swagger-tools"
+    "wb-swagger-tools": "./bin/wb-swagger-tools"
   },
   "files": [
     "bin",

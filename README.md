@@ -28,19 +28,10 @@ based on the [JSON Schema][json-schema] associated with that version of the spec
 
 ## Installation
 
-Swagger Tools is available for both Node.js and the browser.  Installation instructions for each environment are below.
-
-### Browser
-
-Installation for browser applications can be done via [Bower][bower] or by downloading a standalone binary.
-
-
-### Node.js
-
 Installation for Node.js applications 
 
 ```
-npm i -g git+https://github.com/WAvdBeek/swagger-node.git
+npm i -g git+https://github.com/WAvdBeek/wb-swagger-tools.git
 ```
 
 ## Documentation
